@@ -88,6 +88,7 @@ def img2vector(filename):
     return returnVect
 
 #手写数字识别系统的测试代码
+#缺点是这个方法的效率太低了
 def handwritingClassTest():
     hwLabels = []
     trainingFileList = listdir('trainingDigits')
