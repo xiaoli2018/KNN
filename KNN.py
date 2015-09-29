@@ -85,7 +85,7 @@ def img2vector(filename):
         lineStr = fr.readline()
         for j in range(32):
             returnVect[0,32*i+j] = int(lineStr[j])
-    return returnV
+    return returnVect
 
 #手写数字识别系统的测试代码
 def handwritingClassTest():
@@ -115,7 +115,7 @@ def handwritingClassTest():
         if(classifierResult != classNumStr):
             errorCount += 1.0
     print "the total number of errors is :%d"%errorCount
-    print "the total error rate is : %f"%(errorCount/float(mTest))
+    print "the total error rate is : %f"%(errorCount/float(mTest))   #检测错误率
 
 
 
